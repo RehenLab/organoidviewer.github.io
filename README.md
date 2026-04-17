@@ -1,18 +1,8 @@
 # Organoid Viewer
 
-This repository contains the code and assets used to visualize organoid images in the browser and to support expert-based quality classification during the study.
+This repository contains the code and assets used to visualize organoid images in the browser and to support expert-based quality classification during the study present in Got-Silva et al., 2026, still in submission phase.
 
-The project was deployed as a GitHub Pages viewer and includes both a standalone visualization interface and the Jotform-integrated widget used during expert evaluation. The interface allows users to inspect organoid images across focal planes and classify each organoid as acceptable, not acceptable, or image did not load.
-
-## Overview
-
-This repository supports the visualization and expert review of organoid images. It includes a browser-based viewer for exploring image tiles generated from microscopy data, as well as the survey widget used to collect expert classifications during the study.
-
-The repository is best understood as a research-support and reproducibility resource rather than a general-purpose software package.
-
-## Purpose
-
-The repository was used for two related purposes. First, it provides an interactive interface for viewing organoid images in the browser. Second, it contains the version of the interface used to collect expert assessments of organoid image quality.
+The project was deployed as a GitHub Pages viewer and includes both a standalone visualization interface and the Jotform-integrated widget used during expert evaluation. The interface allows users to inspect organoid images across focal planes and classify each organoid as acceptable, not acceptable, or image did not load. It works as research-support and reproducibility resource, but may also be repurposed for easy visualization of microscopy images and inclusion in jotform based surveys.
 
 ## Repository contents
 
@@ -34,7 +24,7 @@ Lookup table linking the anonymized names shown to experts such as `Organoid_1`,
 
 ### `images/`
 
-Folder containing the Deep Zoom image tiles and related structure consumed by OpenSeadragon. This directory also includes some viewer assets and icons.
+Folder containing the Deep Zoom image tiles and related structure consumed by OpenSeadragon.
 
 ### `openseadragon/`
 
@@ -46,13 +36,9 @@ Organoid images were first converted into Deep Zoom tile pyramids using Fiji/Ima
 
 For the expert classification workflow, a Jotform-embedded version of the interface was used. Experts inspected each organoid and selected one of the available classification outcomes. Those responses were then submitted through Jotform and later compiled for downstream analysis.
 
-## Live deployment
-
-This repository is also deployed as a GitHub Pages site for browser-based access to the viewer.
-
 ## Intended use
 
-This repository accompanies a manuscript submission and is intended primarily as a reproducibility, visualization, and methods-support resource. It contains the interface and preprocessing components used for expert inspection of organoid images rather than a packaged software distribution intended for broad reuse.
+This repository accompanies the Goto-Silva et al., 2026 paper, still in submission and is intended primarily as a reproducibility, visualization, and methods-support resource. It contains the interface and preprocessing components used for expert inspection of organoid images rather than a packaged software distribution intended for broad reuse.
 
 ## Notes for reuse
 
